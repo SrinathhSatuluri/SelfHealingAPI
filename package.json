@@ -1,0 +1,42 @@
+{
+  "name": "selfhealingapi",
+  "version": "1.0.0",
+  "description": "SelfHealingAPI - Enterprise-grade automatic API error detection, analysis and healing system",
+  "main": "dist/demo-app/backend/server.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node src/demo-app/backend/server.ts",
+    "build": "tsc",
+    "start": "node dist/demo-app/backend/server.js",
+    "test": "ts-node src/demo-app/backend/test.ts",
+    "demo": "ts-node src/simulator/break-api.ts",
+    "traffic": "ts-node src/simulator/traffic-gen.ts",
+    "simulate": "ts-node src/simulator/traffic-gen.ts simulate"
+  },
+  "keywords": [
+    "api",
+    "self-healing",
+    "llm",
+    "canary-deployment",
+    "schema-mismatch",
+    "automatic-repair",
+    "devops",
+    "monitoring",
+    "typescript"
+  ],
+  "author": "Srinath Satuluri",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.19.27",
+    "@types/uuid": "^11.0.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
