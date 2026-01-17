@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     }
   ],
-  "buildCommand": "echo 'No build needed for API functions'",
+  "buildCommand": "",
   "routes": [
     {
       "src": "/api/(.*)",
